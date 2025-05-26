@@ -282,7 +282,10 @@ class AlfredThorEnv(object):
                 #
                 #     if 'solvable' in gamedata and gamedata['solvable']:
                 #         self.json_file_list.append(json_path)
-
+        
+        # Sort the list for consistent ordering
+        self.json_file_list.sort()
+        
         print("Overall we have %s games..." % (str(len(self.json_file_list))))
         self.num_games = len(self.json_file_list)
 
